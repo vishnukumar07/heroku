@@ -1,0 +1,550 @@
+{% load static %}
+{% static "imag" as baseUrl %}
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
+      <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+  <!--EXTERNAL BOOTSTRAP LINK-->  <!-- script
+    ================================================== -->
+    <script src="{% static 'js/modernizr.js' %}"></script>
+    <script src="{% static 'js/pace.min.js' %}"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="/home/"><img src="{% static 'images/logo.png' %}" alt="Homepage"></a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About me</a></li>
+                <li><a class="smoothscroll"  href="#works" title="works">My Projects</a></li>
+                <li><a class="smoothscroll"  href="#blog" title="blog">Blog</a></li>
+                <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+   <!-- home
+   ================================================== -->
+   <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="{% static 'images/hero-bg.jpg' %}" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Hello There</h3>
+
+                <h1>
+                    I am Subash. <br>
+                    I am a full stack Developer. <br>
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#works" class="smoothscroll btn btn--stroke">
+                        Latest Projects
+                    </a>
+                    <a href="#contact" class="smoothscroll btn btn--stroke">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="home-content__scroll">
+                    <a href="#about" class="scroll-link smoothscroll">
+                        <span> More about me</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-social">
+          <li>
+              <a href="https://linkedin.com/in/subash-v"><i class="im im-linkedin" aria-hidden="true"></i><span>Linkedin</span></a>
+          </li>
+          <li>
+              <a href="https://github.com/Subash-Vadivel?tab=repositories"><i class="im im-github" aria-hidden="true"></i><span>Github</span></a>
+          </li>
+          <li>
+              <a href="mailto:vsubashvsubash@gmail.com"><i class="im im-mail" aria-hidden="true"></i><span>Email</span></a>
+          </li>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=100015698625865"><i class="im im-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/vsubashvsubash?t=mLnWrN7haslKAFfTZp5Lrg&s=09"><i class="im im-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+            </li>
+            <li>
+                <a href="https://instagram.com/subash_v_r?igshid=YmMyMTA2M2Y="><i class="im im-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+        </ul>
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+<!--
+        <div class="row narrow section-intro has-bottom-sep">
+
+        </div> -->
+
+        <div class="row about-content" style="padding:0px 0px 0px 0px">
+            <div class="col-six tab-full left">
+<h1>More About Me</h1>
+                <p style="text-indent:2em">
+                    I’m Subash , currently pursuing BE Computer Science Engineering (CSE) in Kongu Engineering College at Perundurai. I have completed a certification course in Git version control and Django frame work.
+
+  I am also an open-source enthusiast and have created projects that were listed in GitHub.</p>
+  <p style="text-indent:2em">A software engineer with a high interest in competitive programming having a basic knowledge of React JS, Angular JS. Interested in data structure and algorithm. Having
+knowledge of more than a beginner in C , Python and java. More over Punctual, dedicative and hard working.</p>
+
+            </div>
+            <div class="col-six tab-full right">
+           <h1>Technical Skills</h1>
+           <table class="table">
+
+             <tbody>
+               <tr>
+                 <th scope="row">Languages Known :</th>
+                 <td>Java, C , Python</td>
+               </tr>
+               <tr>
+                 <th scope="row">Front End : </th>
+                 <td> HTML , CSS , Java Script</td>
+               </tr>
+               <tr>
+                 <th scope="row">Back End : </th>
+                 <td> MySQL </td>
+               </tr>
+               <tr>
+                 <th scope="row">Version control : </th>
+                 <td> GIT </td>
+               </tr>
+               <tr>
+                 <th scope="row">Frame Works : </th>
+                 <td> React , Django </td>
+               </tr>
+             </tbody>
+           </table>
+
+             </div>
+
+
+
+        </div> <!-- end about-content -->
+        <div class="row about-content" style="padding:0px 0px 0px 0px">
+          <div class="col-twelve col-full right" >
+            <h1>Academic Profile</h1>
+            <table class="table">
+<thead class="thead-dark" style="background-color:rgba(134, 151, 122, 0.8);">
+  <tr >
+    <th scope="col" >Course</th>
+    <th scope="col">Institute</th>
+    <th scope="col">University</th>
+    <th scope="col">Marks</th>
+    <th scope="col">%/CGPA</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <th scope="row">BE(CSE)</th>
+    <td >Kongu Engineering College</td>
+    <td>Anna University</td>
+    <td>-</td>
+    <td>9.59 (upto 3rd sem)</td>
+  </tr>
+  <tr>
+    <th scope="row">HSC</th>
+    <td>BVM Higher Secondary School</td>
+    <td>State Board</td>
+    <td>446</td>
+    <td>87%</td>
+  </tr>
+  <tr>
+    <th scope="row">SSLC</th>
+    <td>BVM Higher Secondary School</td>
+    <td>State Board</td>
+    <td>525</td>
+    <td>89%</td>
+  </tr>
+</tbody>
+</table>
+        </div>
+      </div>
+
+        <div class="row about-content about-content--buttons">
+
+            <div class="col-six tab-full left">
+                <a href="https://drive.google.com/file/d/1va0fsof1PWokGz9Dta_yj0YN0yoQDkP2/view?usp=sharing" class="btn btn--primary full-width">Download My CV</a>
+            </div>
+            <div class="col-six tab-full right">
+                <a href="mailto:vsubashvsubash@gmail.com" class="btn btn--primary full-width">Hire Me Now</a>
+            </div>
+
+        </div> <!-- end about-content buttons -->
+
+
+
+    </section> <!-- end about -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+
+        <div class="row about-content has-bottom-sep";
+
+            <div class="col-full" >
+<h1 style="float:left">My Projects</h1>
+            </div>
+          </div>
+        <div class="row section-intro has-bottom-sep">
+
+            <div class="col-full">
+                <p class="about-content" style="text-align:justify; text-indent:2em">To work hard with full
+dedication for the
+achievement of
+organization objective
+under satisfying job
+contact, hence enhancing
+my skill and knowledge
+and ready to learn new
+things.</p>
+</div>
+        </div>
+
+
+<div class="row">
+{% for p in pro %}
+  <div class="col-six">
+    <div class="thumbnail">
+      <img src="{{p.project_Main_Img.url}}" alt="...">
+      <div class="caption">
+        <h3>{{p.title}}</h3>
+        <p>{{p.content}}</p>
+        <p><a href={{p.details}} class="btn1 btn--primary" role="button">Details</a><a href={{p.fork}} class="btn1 btn--primary" style="float:right;"role="button">Fork</a></p>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+    </section> <!-- end works -->
+
+
+
+    <!-- testimonials
+    ================================================== -->
+    <!-- <div class="s-testimonials">
+
+        <div class="overlay"></div>
+
+        <div class="row testimonials-header">
+            <div class="col-full">
+                <h1 class="h02">What People Say.</h1>
+            </div>
+        </div>
+
+        <div class="row testimonials">
+
+            <div class="col-full testimonials__slider">
+
+                <div class="testimonials__slide">
+                    <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                    <p>Qui ipsam temporibus quisquam velMaiores eos cumque distinctio nam accusantium ipsum.
+                    Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.</p>
+                    <div class="testimonials__author h06">
+                        Tim Cook
+                        <span>CEO, Apple</span>
+                    </div>
+                </div>
+
+                <div class="testimonials__slide">
+                    <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
+                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                    Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
+                    <div class="testimonials__author h06">
+                        Sundar Pichai
+                        <span>CEO, Google</span>
+                    </div>
+                </div>
+
+                <div class="testimonials__slide">
+                    <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                    <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
+                    <div class="testimonials__author h06">
+                        Satya Nadella
+                        <span>CEO, Microsoft</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>-->
+
+
+    <!-- blog
+    ================================================== -->
+    <section id="blog" class="s-blog target-section">
+      <div class="row about-content has-bottom-sep";
+
+          <div class="col-full" >
+      <h1 style="float:left">Latest From The Blog.</h1>
+          </div>
+        </div>
+        <div class="row section-intro has-bottom-sep">
+            <div class="col-full">
+                <p class="about-content" style="text-align:justify; text-indent:2em">Sometimes I think of blogging as finger exercises for a violinist; sometimes I think of
+                  it as mulching a garden. It is incredibly useful and helpful to my "real" writing.</p>
+            </div>
+        </div>
+
+        <div class="row blog-content">
+            <div class="col-full">
+
+
+                <div class="blog-list block-1-2 block-tab-full">
+                    
+                   {% for de in dest %}
+                    <article class="col-block">
+                         
+                        <div class="blog-date">
+                            <a href="/blog/">{{de.date}}</a>
+                        </div>
+
+                        <h2 class="h01"><a href="/blog/">{{de.title}}</a></h2>
+                        <p>{{de.content}}
+                        </p>
+
+                        <div class="blog-cat">
+                            <a href="/blog/">{{de.types}}</a>
+                        </div>
+                        
+                    </article>
+                
+                    {% endfor %}
+                    
+
+              
+                  
+                </div> <!-- end blog-list -->
+
+            </div> <!-- end col-full -->
+       
+        </div> <!-- end blog-content -->
+   </section> 
+
+                    </article>
+                   
+                </div> <!-- end blog-list -->
+
+            </div> <!-- end col-full -->
+        </div> <!-- end blog-content -->
+
+    </section> <!-- end s-blog -->
+
+
+
+
+
+    <!-- s-stats
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="overlay"></div>
+
+        <div class="row narrow section-intro">
+            <div class="col-full">
+
+                <h1 style="color:#862121">Contact</h1>
+
+            </div>
+        </div>
+
+        <div class="row contact__main">
+          <div class="col-four tab-full contact__infos">
+              <h4 class="h06">Phone</h4>
+              <p>Phone: (+91) 999 432 0743<br>
+              Mobile: (+91) 877 873 2697<br>
+              </p>
+
+              <h4 class="h06">Email</h4>
+              <p>vsubashvsubash@gmail.com<br>
+              </p>
+
+              <h4 class="h06">Address</h4>
+              <p>
+                4/2 Puliyampatti <br>
+                Mulanur 638106<br>
+                Dharapuram.
+              </p>
+          </div>
+          <div class="col-four">
+          </div>
+            <div class="col-four tab-full ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7330.813924365902!2d77.71964975860442!3d10.796845232219392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1soffice!5e0!3m2!1sen!2sin!4v1653810139627!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+
+        </div>
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="col-full">
+
+                <div class="footer-logo">
+                    <a class="footer-site-logo" href="#home"><img src="{% static 'images/logo.png' %}" alt="Homepage"></a>
+                </div>
+
+                <ul class="footer-social">
+
+                  <li><a href="https://linkedin.com/in/subash-v">
+                      <i class="im im-linkedin" aria-hidden="true"></i>
+                      <span>Linkedin</span>
+                  </a></li>
+
+                  <li><a href="https://github.com/Subash-Vadivel?tab=repositories">
+                      <i class="im im-github" aria-hidden="true"></i>
+                      <span>GitHub</span>
+                  </a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100015698625865">
+                        <i class="im im-facebook" aria-hidden="true"></i>
+                        <span>Facebook</span>
+                    </a></li>
+                    <li><a href="https://twitter.com/vsubashvsubash?t=mLnWrN7haslKAFfTZp5Lrg&s=09">
+                        <i class="im im-twitter" aria-hidden="true"></i>
+                        <span>Twitter</span>
+                    </a></li>
+                    <li><a href="https://instagram.com/subash_v_r?igshid=YmMyMTA2M2Y=">
+                        <i class="im im-instagram" aria-hidden="true"></i>
+                        <span>Instagram</span>
+                    </a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>Design by Subash</span>
+                </div>
+
+                <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+
+</body>
+
+</html>
